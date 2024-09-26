@@ -23,7 +23,7 @@ Data analysis and dashboard creation for Media Business Analyst Task.
 - [Contact](#contact)
 
 ## Project Overview
-This project outlines the complete process of creating an interactive **Marketing Performance Dashboard** to analyse campaign data, revenue, and engagement rates that could helped marketing teams reallocate resources more effectively and increase conversion rates for marketing teams. The dashboard, built using **VS Code** and Python programming for data cleaning and transformations and **Tableau** for dynamic visualisations, providing real-time insights to improve decision-making and budgets for marketing campaigns. This analysis  focus on high-performing campaigns and highlight underperforming ones.
+This project outlines the complete process of creating an interactive **Marketing Performance Dashboard** to analyse campaign data, revenue, and engagement rates that could help marketing teams reallocate resources more effectively and increase conversion rates for marketing teams. The dashboard, was built using **VS Code** and Python programming for data cleaning and transformations and **Tableau** for dynamic visualisations, providing real-time insights to improve decision-making and budgets for marketing campaigns. This analysis focuses on high-performing campaigns and highlights underperforming ones.
 
 ## Dataset Description
 - **Source**: Internal company data, including campaign performance, revenue metrics, and customer engagement data.
@@ -57,12 +57,12 @@ pip install pandas numpy matplotlib seaborn
 ### Data Cleaning
 1. Handled missing values by removing rows with NaNs in critical fields such as revenue and engagement data. This ensured a cleaner and more reliable dataset for analysis.
 2. Converted date fields to datetime format using **Pandas** to ensure proper time-series analysis and allow stakeholders to track performance over time.
-3. Merged datasets from multiple sources (campaign performance, revenue, engagement metrics) using `pd.merge()` for unified data analysis.
+3. Merged datasets from multiple sources (campaign performance, revenue, engagement metrics) using `pd.merge()` for accurate and unified data analysis allowing for a view of campaign success across key metrics.
 
 ### Exploratory Data Analysis (EDA)
-1. Calculated descriptive statistics such as mean, median, and standard deviation for key metrics like revenue and conversion rates.
-2. Created histograms and box plots to visualise the distribution of revenue across different campaigns.
-3. Performed correlation analysis and visualised the relationships between engagement rates, conversion rates, and revenue using a **seaborn** heatmap.
+1. Calculated descriptive statistics such as mean, median, and standard deviation for key metrics like revenue and conversion rates to provide a foundational understanding of campaign performance.
+2. Created histograms and box plots to visualise the distribution of revenue and engagement across different campaigns, identifying patterns that could inform strategic decisions.
+3. Performed correlation analysis and visualised the relationships between engagement rates, conversion rates, and revenue using a **seaborn** heatmap, which uncovered actionable insights like the direct correlation between high engagement and better conversion outcomes.
 
 ### Data Transformation
 1. Created calculated fields such as **Engagement Rate** (clicks/views) and **Conversion Rate** (purchases/clicks) using **Pandas**.
@@ -75,11 +75,11 @@ pip install pandas numpy matplotlib seaborn
     - **KPI Indicators**: Displayed total revenue, engagement rate, and conversion rate at the top of the dashboard.
     - **Revenue Over Time by Campaign**: A line chart showing revenue trends over time, enabling users to identify when and which campaigns performed best.
     - **Total Revenue by Campaign Category**: Combined bar and line charts comparing revenue across campaign categories, overlaid with engagement and conversion rates to assess campaign effectiveness.
-    - **Weekly Campaign Performance Comparison**: Bar charts showing weekly performance metrics to allow for a comparative analysis of campaigns in real-time.
+    - **Weekly Campaign Performance Comparison**: Bar charts showing weekly performance metrics, allowing for a comparative analysis of campaigns in real-time and making adjustments where necessary.
 
 ### Advanced Features
-1. **Calculated Fields**: Created additional metrics in Tableau, including **% Change from Previous Week** and **Cumulative Spend** to help stakeholders track performance trends over time.
-2. **Interactive Filters**: Added date and campaign category filters, allowing users to customise their view of the data and focus on specific timeframes or campaign types.
+1. **Calculated Fields**: Created additional metrics in Tableau, including **% Change from Previous Week** and **Cumulative Spend** to help stakeholders track performance trends over time and identify growth opportunities.
+2. **Interactive Filters**: Added date and campaign category filters, allowing users to customise their view of the data and drill down into specific timeframes or campaign types.
 3. **Dashboard Storytelling**: Structured the dashboard in a logical flow, starting from high-level KPIs and allowing users to drill down into more granular campaign performance data.
 4. **Customised Tooltips**: Provided detailed tooltips for each visual, giving users additional context about revenue and engagement rates at a campaign level.
 
@@ -90,7 +90,7 @@ pip install pandas numpy matplotlib seaborn
   - Real-time data enabled stakeholders to adjust their marketing strategies and optimise underperforming campaigns, ensuring better allocation of marketing spend.
 
 ## Conclusion
-The **Marketing Performance Dashboard** successfully provided insights into key performance indicators for marketing campaigns. By visualising metrics such as revenue, engagement, and conversion rates, the dashboard allowed stakeholders to make data-driven decisions. This led to better resource allocation, improved campaign performance, and maximised return on investment.
+The **Marketing Performance Dashboard** successfully provided insights into key performance indicators for marketing campaigns. By visualising metrics such as revenue, engagement, and conversion rates, the dashboard allowed stakeholders to make informed data-driven decisions. This could lead to better resource allocation, improved campaign performance, and maximised return on investment.
 
 ## Future Work
 - **Predictive Analytics**: Incorporate predictive models to forecast future campaign performance based on historical data, allowing for even more informed decision-making. It would allow the team to forecast future campaign performance with an accuracy of 90%, driving better allocation of resources and a projected 20% increase in overall marketing efficiency.
@@ -107,9 +107,20 @@ The **Marketing Performance Dashboard** successfully provided insights into key 
    ```bash
    git clone https://github.com/Mariejlo/marketing-dashboard.git
    ```
+2. **Install the necessary Python libraries**:
+   ```bash
+   pip install -r requirements.txt
+
+   ```
+3. **Run the data cleaning script**:
+   ```bash
+   python data_cleaning.py
+   ```
+4. **Import the cleaned data into Tableau** and follow the steps outlined in the **Dashboard Creation in Tableau** section to recreate the visualisations.
+   
    
 ### **Contact / Support**
-For support or inquiries, feel free to contact [Marie.lopator@gmail.com]
+For support or inquiries on the final dashboard look, feel free to contact [Marie.lopator@gmail.com] or send me a message on Linkedin.
 
 Best of luck!
 
